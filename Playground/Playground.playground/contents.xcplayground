@@ -3,5 +3,7 @@
     <pages>
         <page name='With a tortoise'/>
         <page name='With 2 tortoises'/>
+        <page name='Starter Code'/>
+        <page name='Draw my Name'/>
     </pages>
 </playground>
