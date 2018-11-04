@@ -140,7 +140,32 @@ public extension Tortoise {
         self.curve(withSide: 20, withSize: 5, drawSides: 20)
 
         self.setH(90)
-        self.forward(30)
+        self.forward(41)
+
+    }
+
+    func drawJ() {
+
+        self.setH(0)
+        self.curve(withSide: 1, withSize: 50, drawSides: 1)
+
+        self.setH(90)
+        self.curve(withSide: 1, withSize: 30, drawSides: 1)
+
+        self.setH(270)
+        self.curve(withSide: 1, withSize: 60, drawSides: 1)
+
+        self.setH(90)
+        self.curve(withSide: 1, withSize: 30, drawSides: 1)
+
+        self.setH(180)
+        self.curve(withSide: 1, withSize: 50, drawSides: 1)
+        self.curve(withSide: 20, withSize: 6, drawSides: 10)
+
+        self.setH(90)
+        self.forward(70)
+        self.setH(180)
+        self.forward(14)
 
     }
 }
