@@ -20,10 +20,9 @@ canvas.drawing { t in
     t.ycor
     t.drawB()
     t.drawr()
-    
-    t.setH(-10)
-    t.curve(withSide: 30, withSize: 6, drawSides: 10)
-    
+    t.drawa()
+    t.drawn()
+
     t.xcor
     t.ycor
     
