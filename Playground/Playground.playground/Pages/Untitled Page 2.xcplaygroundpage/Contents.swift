@@ -12,8 +12,7 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { t in
-
-   
+    
     // Get the turtle in position to start drawing name
     t.penUp()
     t.goto(-200, 80)
@@ -21,7 +20,7 @@ canvas.drawing { t in
     t.xcor
     t.ycor
     
-    t.drawB()
+    
     t.drawr()
     t.drawa()
     t.drawn()
