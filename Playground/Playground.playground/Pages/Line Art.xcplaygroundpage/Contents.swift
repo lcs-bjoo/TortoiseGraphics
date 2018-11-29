@@ -56,10 +56,6 @@ canvas.drawing { t in
             t.curve(withSide: 10, withSize: 50, drawSides: 10)
         }
     }
-
-    for _ in 1...5{
-        t.goto(0, 0)
-        
 }
 
 
