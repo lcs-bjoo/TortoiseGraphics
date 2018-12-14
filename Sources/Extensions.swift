@@ -169,4 +169,16 @@ public extension Tortoise {
 
     }
 
+    func squiggle(startingDirection: Double = 0) {
+
+        self.curve(withSide: 100, withSize: 2.1, drawSides: 25)
+
+        self.curve(withSide: -100, withSize: 2.1, drawSides: 25)
+
+        self.curve(withSide: 100, withSize: 2.1, drawSides: 25)
+
+        self.curve(withSide: -100, withSize: 2.1, drawSides: 25)
+
+        self.curve(withSide: 100, withSize: 2.1, drawSides: 25)    }
+
 }

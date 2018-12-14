@@ -188,21 +188,30 @@ canvas.drawing { t in
     
     //draw body
     
-             
-    t.setHeading(310)
-    t.curve(withSide: 100, withSize: 2, drawSides: 25)
-    t.setHeading(50)
-    t.curve(withSide: -100, withSize: 2, drawSides: 25)
+    t.setHeading(315)
+    t.squiggle()
     
-    t.setHeading(310)
-    t.curve(withSide: 100, withSize: 2, drawSides: 25)
-    t.setHeading(50)
-    t.curve(withSide: -100, withSize: 2, drawSides: 30)
+    t.setHeading(225)
+    t.squiggle()
     
-    t.setHeading(310)
-    t.curve(withSide: 100, withSize: 2, drawSides: 25)
+    t.setHeading(135)
+    t.squiggle()
     
-    t.hideTortoise()
+    t.setHeading(45)
+    t.squiggle()
+    
+    //transition position to draw 3/4 3D body shape
+    t.penDown()
+    t.setHeading(55)
+    t.forward(45)
+    
+    //draw 3/4 body
+    
+    t.setHeading(315)
+    t.squiggle()
+    
+    
+    //t.hideTortoise()
     
     
     
