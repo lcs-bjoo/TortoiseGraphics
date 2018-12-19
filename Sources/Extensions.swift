@@ -179,6 +179,88 @@ public extension Tortoise {
 
         self.curve(withSide: -100, withSize: 2.1, drawSides: 25)
 
-        self.curve(withSide: 100, withSize: 2.1, drawSides: 25)    }
+        self.curve(withSide: 100, withSize: 2.1, drawSides: 25)
+
+    }
+
+    func drawEye() {
+
+        self.curve(withSide: 50, withSize: 5, drawSides: 50)
+        self.curve(withSide: 50, withSize: 2, drawSides: 50)
+        self.curve(withSide: 50, withSize: 1, drawSides: 50)
+        self.curve(withSide: 50, withSize: 5, drawSides: 8)
+
+        //first eyelash on eye
+        self.setHeading(-40)
+        self.penDown()
+        self.forward(25)
+        self.setHeading(140)
+        self.forward(25)
+        self.setHeading(57)
+
+        //second eyelash on eye
+        self.curve(withSide: 50, withSize: 5, drawSides: 4)
+        self.setHeading(0)
+        self.penDown()
+        self.forward(25)
+        self.setHeading(180)
+        self.forward(25)
+
+        //third eyelash on eye
+        self.setHeading(86)
+        self.curve(withSide: 50, withSize: 5, drawSides: 5)
+        self.setHeading(45)
+        self.penDown()
+        self.forward(25)
+        self.setHeading(225)
+        self.forward(25)
+
+        //transition to first position
+        self.setHeading(122)
+        self.curve(withSide: 50, withSize: 5, drawSides: 33)
+    }
+    func drawStub() {
+
+        self.curve(withSide: 10, withSize: 8, drawSides: 5)
+
+        self.penDown()
+        self.forward(30)
+
+        self.right(90)
+        self.forward(25)
+
+        self.right(90)
+        self.forward(30)
+
+    }
+
+    func drawLeg() {
+
+        self.penUp()
+
+        self.setHeading(180)
+        self.forward(30)
+        self.left(90)
+        self.forward(16)
+
+        self.penDown()
+        self.right(90)
+        self.forward(90)
+
+        //draw foot
+        self.right(90)
+        self.forward(30)
+        self.left(90)
+        self.forward(15)
+        self.left(90)
+        self.forward(30)
+        self.left(90)
+        self.forward(15)
+
+        self.left(90)
+        self.forward(5)
+        self.right(90)
+        self.forward(90)
+    }
 
 }
